@@ -1,0 +1,285 @@
+/* Estilos generales*/
+
+p, a, ul, li, input, button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-variant: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 700;
+  font-variant: normal;
+} 
+
+#init {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 700;
+  font-variant: normal;
+}
+
+/* Estilos para las categorías y productos de inicio */
+main * {
+  transition: 0.5s;
+}
+
+main .column {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-left: 3rem;
+}
+
+main .column .card {
+  background-size: cover;
+  background-position: center;
+  width: 65%;
+  min-height: 170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
+  position: relative;
+}
+
+main .column .card::after {
+  border-radius: var(--bs-card-border-radius);
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 1), transparent);
+}
+
+main .column .card .txt {
+  margin-left: -3rem;
+  z-index: 1;
+}
+
+main .column .card .txt h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+main .column .card .txt p {
+  font-size: 0.9rem;
+  margin-top: 33px;
+  opacity: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+main .column .card .txt a {
+  bottom: 0rem;
+  margin-left: 0;
+}
+
+main .column .card .txt a::after {
+  display: none;
+}
+
+main .column .card .txt a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+main .column .card a {
+  z-index: 3;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 1rem;
+  position: relative;
+  bottom: -0.5rem;
+  text-transform: uppercase;
+}
+
+main .column .card a::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 0;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  transition: 0.5s;
+}
+
+main .column:hover {
+  padding-left: 0;
+}
+
+main .column:hover .card {
+  width: 85%;
+}
+
+main .column:hover .card::after {
+  opacity: 1;
+}
+
+main .column:hover .txt {
+  margin-left: 1rem;
+}
+
+main .column:hover .txt h2,
+main .column:hover .txt p {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+
+main .column:hover .txt a {
+  color: rgba(0, 0, 0, 1);
+}
+
+main .column:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+
+main .column:hover a::after {
+  width: 10%;
+}
+
+/* Dropdown de categorías y localizaciones */
+
+#menu > li > ul > li > a:active {
+  background-color: #000000;
+}
+
+/* Estilos para la barra de búsqueda */
+
+#search-form > fieldset > input:nth-child(2) {
+  width: 80px;
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+#search-form > fieldset > input:nth-child(3) {
+  width: 80px;
+  border-radius: 0 0.375rem 0.375rem 0;
+  border-left: 0;
+}
+
+.form-switch .form-check-input:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ababab'/%3e%3c/svg%3e");
+}
+
+.form-check-input:checked {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.form-control:focus, .form-check-input:focus, .form-select:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 .25rem rgba(0,0,0,.25);
+}
+
+.dropend .dropdown-menu {
+  transition: all 0.5s ease;
+  display: flex;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.dropend .dropdown-menu.show {
+  opacity: 1;
+}
+
+#search-form > button.border-0.bg-white.dropdown-toggle.dropdown-toggle-split::after {
+  transition: 0.5s;
+  border-width: 7px !important;
+  vertical-align: middle;
+}
+
+#search-form > button.border-0.bg-white.dropdown-toggle.dropdown-toggle-split.show::after {
+  transform: scale(-1, 1);
+}
+
+/* Formulario nuevo coche */
+/* Se que podría haberlo hecho con js, pero aprendí un montón haciendolo con css y me parece mucho más sencillo */
+label[for="avVariable"]::after {
+  content: 'Selecciona un tipo';
+}
+
+div:has(div div input[value="Car"]:checked ) + div { 
+  label[for="avVariable"]::after {
+    content: 'Pasajeros';
+  }
+  > div span i::before {
+    content: "\f4cf";
+  } 
+}
+
+div:has(div div input[value="Bike"]:checked ) + div { 
+  label[for="avVariable"]::after {
+    content: 'Cilindradas (CC)';
+  }
+  > div span i::before {
+    content: "\f57f";
+  } 
+}
+
+div:has(div div input[value="Van"]:checked ) + div { 
+  label[for="avVariable"]::after {
+    content: 'Carga útil (Kg)';
+  }
+  > div span i::before {
+    content: "\f491";
+  } 
+}
+
+
+/* Estilos para la barra de búsqueda cuando hay espacio */
+@media (min-width: 1290px) {
+
+  .dropend .dropdown-menu {
+    min-width: 0;
+    width: 0;
+  }
+  
+  .dropend .dropdown-menu.show {
+    width: 420px;
+  }
+}
+
+/* Estilos para la barra de búsqueda cuando no hay espacio */
+@media (max-width: 1290px) {
+  #search-form > button.border-0.bg-white.dropdown-toggle.dropdown-toggle-split::after {
+    border-top: .3em solid ;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
+  
+  #search-form > button.border-0.bg-white.dropdown-toggle.dropdown-toggle-split.show::after {
+    transform: scale(1, -1);
+  }
+
+  .dropend .dropdown-menu {
+    position: absolute !important;
+    inset: 0px auto auto 0px !important;
+    margin: 0px !important;
+    transform: translate3d(0px, 40px, 0px) !important;
+    flex-wrap: wrap;
+    height: 0;
+    width: 82%;
+    padding: 0px !important;
+    margin-top: 0px !important;
+    border: 1px solid rgba(0, 0, 0, 0.175) !important;
+  }
+  
+  .dropend .dropdown-menu.show {
+    padding: 10px !important;
+    margin-top: 50px !important;
+    height: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  #menu {
+      align-items: flex-start !important;
+  }
+  .dropend .dropdown-menu.show {
+    margin-top: 7px !important;
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "categories": [
+    {
+      "category": {
+        "name": "Americanos",
+        "description": "Vehículos de procedencia americana"
+      },
+      "licenses": [
+        "7890RTY",
+        "5678BFG",
+        "8765JKL"
+      ]
+    },
+    {
+      "category": {
+        "name": "Coches",
+        "description": "Coches con distintas cantidades de plazas"
+      },
+      "licenses": [
+        "5678BFG",
+        "8765JKL",
+        "2345MNY",
+        "4321CDF",
+        "1234LBC"
+      ]
+    },
+    {
+      "category": {
+        "name": "Europeos",
+        "description": "Vehículos de procedencia europea"
+      },
+      "licenses": [
+        "7788RBC",
+        "4567GHJ",
+        "6677XYZ",
+        "1122ZTP",
+        "2345MNY",
+        "7891STP"
+      ]
+    },
+    {
+      "category": {
+        "name": "Japoneses",
+        "description": "Vehículos de procedencia japonesa"
+      },
+      "licenses": [
+        "4321CDF",
+        "1234LBC",
+        "3456PWR",
+        "5678XYZ",
+        "9876DYF",
+        "1234KBC"
+      ]
+    },
+    {
+      "category": {
+        "name": "Motos",
+        "description": "Motocicletas con distintas cilindradas"
+      },
+      "licenses": [
+        "7891STP",
+        "3456PWR",
+        "5678XYZ",
+        "9876DYF",
+        "1234KBC"
+      ]
+    },
+    {
+      "category": {
+        "name": "Vans",
+        "description": "Vans con distintas cargas útiles"
+      },
+      "licenses": [
+        "7788RBC",
+        "4567GHJ",
+        "6677XYZ",
+        "1122ZTP",
+        "7890RTY"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location": {
+        "name": "Axarquía Sur",
+        "address": "Plaza Carmelitas, 12",
+        "location": {
+          "latitude": 36.781278,
+          "longitude": -4.10425
+        },
+        "description": "Punto de recogida en Plaza Carmelitas, en el centro de la comarca de Axarquía"
+      },
+      "licenses": [
+        "3456PWR",
+        "2345MNY",
+        "1234LBC",
+        "1234KBC"
+      ]
+    },
+    {
+      "location": {
+        "name": "Barcelona Norte",
+        "address": "Avenida Diagonal, 10",
+        "location": {
+          "latitude": 41.3879,
+          "longitude": 2.16992
+        },
+        "description": "Alquiler de vehículos en la zona alta de Barcelona, cerca de la Avenida Diagonal"
+      },
+      "licenses": [
+        "7891STP",
+        "7890RTY",
+        "6677XYZ",
+        "5678XYZ"
+      ]
+    },
+    {
+      "location": {
+        "name": "Bilbao Centro",
+        "address": "Don Diego López de Haro, 48",
+        "location": {
+          "latitude": 43.2636,
+          "longitude": -2.937566
+        },
+        "description": "Ubicación en el centro de Bilbao, junto a la Gran Vía y la ría"
+      },
+      "licenses": [
+        "9876DYF",
+        "4321CDF",
+        "1122ZTP"
+      ]
+    },
+    {
+      "location": {
+        "name": "Madrid Centro",
+        "address": "C. de Espoz y Mina, 2",
+        "location": {
+          "latitude": 40.4165,
+          "longitude": -3.70256
+        },
+        "description": "Punto de recogida en el centro de Madrid, cerca de la Plaza de las Cortes"
+      },
+      "licenses": [
+        "8765JKL",
+        "7788RBC",
+        "5678BFG",
+        "4567GHJ"
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "_license": "7891STP",
+      "_brand": "Ducati",
+      "_model": "Monster 821",
+      "_price": 60,
+      "_description": "Naked italiana con carácter, potencia y estilo para disfrutar cada curva.",
+      "_image": "img/Ducati-Monster-821.jpg",
+      "_isRented": false,
+      "engine": 821
+    },
+    {
+      "_license": "5678BFG",
+      "_brand": "Ford",
+      "_model": "Explorer",
+      "_price": 90,
+      "_description": "Todoterreno espacioso, perfecto para grupos grandes y trayectos largos.",
+      "_image": "img/Ford-Explorer.jpg",
+      "_isRented": false,
+      "passengers": 7
+    },
+    {
+      "_license": "7890RTY",
+      "_brand": "Ford",
+      "_model": "Transit",
+      "_price": 110,
+      "_description": "Robusta y funcional, ideal para el transporte diario con total fiabilidad.",
+      "_image": "img/Ford-Transit.jpg",
+      "_isRented": true,
+      "payload": 1500
+    },
+    {
+      "_license": "1234KBC",
+      "_brand": "Honda",
+      "_model": "CB500X",
+      "_price": 47,
+      "_description": "Trail versátil y cómoda, ideal tanto para ciudad como para rutas largas.",
+      "_image": "img/Honda-CB500X.jpg",
+      "_isRented": true,
+      "engine": 471
+    },
+    {
+      "_license": "7788RBC",
+      "_brand": "Iveco",
+      "_model": "Daily",
+      "_price": 125,
+      "_description": "Potente y duradera, lista para afrontar las jornadas más exigentes.",
+      "_image": "img/Iveco-Daily.jpg",
+      "_isRented": false,
+      "payload": 1600
+    },
+    {
+      "_license": "8765JKL",
+      "_brand": "Jeep",
+      "_model": "Renegade",
+      "_price": 88,
+      "_description": "Compacto y con espíritu off-road, ideal para la ciudad y la montaña.",
+      "_image": "img/Jeep-Renegade.jpg",
+      "_isRented": false,
+      "passengers": 5
+    },
+    {
+      "_license": "9876DYF",
+      "_brand": "Kawasaki",
+      "_model": "Ninja 400",
+      "_price": 49,
+      "_description": "Deportiva estilizada, combina diseño agresivo con gran maniobrabilidad.",
+      "_image": "img/Kawasaki-Ninja-400.jpg",
+      "_isRented": true,
+      "engine": 399
+    },
+    {
+      "_license": "4567GHJ",
+      "_brand": "Mercedes-Benz",
+      "_model": "Sprinter",
+      "_price": 120,
+      "_description": "Furgoneta profesional con gran capacidad, perfecta para trabajos exigentes.",
+      "_image": "img/Mercedes-Benz-Sprinter.jpg",
+      "_isRented": true,
+      "payload": 1300
+    },
+    {
+      "_license": "4321CDF",
+      "_brand": "Nissan",
+      "_model": "X-Trail",
+      "_price": 85,
+      "_description": "Crossover fiable y práctico, pensado para quienes buscan confort y aventura.",
+      "_image": "img/Nissan-X-Trail.jpg",
+      "_isRented": true,
+      "passengers": 5
+    },
+    {
+      "_license": "6677XYZ",
+      "_brand": "Peugeot",
+      "_model": "Boxer",
+      "_price": 118,
+      "_description": "Espaciosa y resistente, diseñada para facilitar tus tareas de transporte.",
+      "_image": "img/Peugeot-Boxer.jpg",
+      "_isRented": false,
+      "payload": 1350
+    },
+    {
+      "_license": "1122ZTP",
+      "_brand": "Renault",
+      "_model": "Master",
+      "_price": 115,
+      "_description": "Amplia y práctica, una opción eficiente para cualquier necesidad logística.",
+      "_image": "img/Renault-Master.jpg",
+      "_isRented": true,
+      "payload": 1400
+    },
+    {
+      "_license": "3456PWR",
+      "_brand": "Suzuki",
+      "_model": "V-Strom 650",
+      "_price": 55,
+      "_description": "Trail robusta y fiable, diseñada para el confort en trayectos largos.",
+      "_image": "img/Suzuki-V-Strom-650.jpg",
+      "_isRented": false,
+      "engine": 645
+    },
+    {
+      "_license": "1234LBC",
+      "_brand": "Toyota",
+      "_model": "RAV4",
+      "_price": 80,
+      "_description": "SUV versátil y cómodo, ideal para familias o escapadas de fin de semana.",
+      "_image": "img/Toyota-RAV4.jpg",
+      "_isRented": true,
+      "passengers": 5
+    },
+    {
+      "_license": "2345MNY",
+      "_brand": "Volkswagen",
+      "_model": "Tiguan",
+      "_price": 87,
+      "_description": "SUV elegante y funcional, combina estilo con gran rendimiento.",
+      "_image": "img/Volkswagen-Tiguan.jpg",
+      "_isRented": false,
+      "passengers": 5
+    },
+    {
+      "_license": "5678XYZ",
+      "_brand": "Yamaha",
+      "_model": "MT-07",
+      "_price": 50,
+      "_description": "Moto ligera y potente, perfecta para una conducción ágil y divertida.",
+      "_image": "img/Yamaha-MT-07.jpg",
+      "_isRented": true,
+      "engine": 689
+    }
+  ],
+  "customers": [
+    {
+      "id": "12345678A",
+      "name": "Juan Pérez"
+    },
+    {
+      "id": "87654321B",
+      "name": "María López"
+    },
+    {
+      "id": "87654521H",
+      "name": "Pedro Picapiedra"
+    }
+  ],
+  "rentals": [
+    {
+      "id": 1,
+      "vehicle": "1234LBC",
+      "customer": "12345678A",
+      "startRental": "2025-01-17T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 2,
+      "vehicle": "1234KBC",
+      "customer": "12345678A",
+      "startRental": "2025-01-20T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 3,
+      "vehicle": "4321CDF",
+      "customer": "12345678A",
+      "startRental": "2025-02-10T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 4,
+      "vehicle": "9876DYF",
+      "customer": "87654321B",
+      "startRental": "2025-01-08T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 5,
+      "vehicle": "1122ZTP",
+      "customer": "87654321B",
+      "startRental": "2025-02-23T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 6,
+      "vehicle": "5678XYZ",
+      "customer": "87654321B",
+      "startRental": "2025-03-14T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 7,
+      "vehicle": "4567GHJ",
+      "customer": "87654521H",
+      "startRental": "2025-02-25T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    },
+    {
+      "id": 8,
+      "vehicle": "7890RTY",
+      "customer": "87654521H",
+      "startRental": "2025-03-03T00:00:00.000Z",
+      "isFinished": false,
+      "price": 0
+    }
+  ]
+}
